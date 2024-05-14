@@ -3,44 +3,11 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int n,c, a[1000][1000];
-int u;
-bool chuaxet[1000]; 
-
-void init(){
-	for(int k = 1; k<=c; k++){
-		int i,j; cin >> i >> j;
-		a[i][j] = 1;
-		a[j][i] = 1; 
-	} 
-	for(int i=1; i<=n; i++){
-		chuaxet[i] = true; 
-	} 
-	cin >> u; 
-} 
-
-void BFS(int u){
-	queue<int> qe; 
-	qe.push(u);
-	cout << u << " "; 
-	chuaxet[u] = false;
-	while(!qe.empty()){
-		int t = qe.front();
-		qe.pop(); 
-		for(int i=1; i<=n; i++){
-			if(chuaxet[i] && a[t][i]){
-				chuaxet[i] = false; 
-				qe.push(i); 
-				cout << i << " "; 
-			} 
-		} 
-	} 
-} 
 
 int main(){
-	cin >> n >> c;
-	init();
-	BFS(u); 
+	int a = 10, b = 5;
+	cout << a+b;
+	cout << "HELLO WORLD";
 } 
 
 /*
