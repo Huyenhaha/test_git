@@ -38,11 +38,7 @@ void BFS(int u){
 } 
 
 int main(){
-	cout << " xin chao "; 
-	cin >> n;
-	cin >> c; 
-	init();
-	BFS(u); 
+	cout << "git conflict" << endl;
 } 
 
 /*
