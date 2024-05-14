@@ -6,7 +6,7 @@ using namespace std;
 int n,c, a[1000][1000];
 int u;
 bool chuaxet[1000]; 
-
+int m = 0; 
 void init(){
 	for(int k = 1; k<=c; k++){
 		int i,j; cin >> i >> j;
@@ -38,7 +38,9 @@ void BFS(int u){
 } 
 
 int main(){
-	cin >> n >> c;
+	cout << " xin chao "; 
+	cin >> n;
+	cin >> c; 
 	init();
 	BFS(u); 
 } 
