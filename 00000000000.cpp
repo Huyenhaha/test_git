@@ -1,5 +1,3 @@
-
-// BFS - queue - danh sach canh 
 #include<bits/stdc++.h>
 using namespace std;
 
